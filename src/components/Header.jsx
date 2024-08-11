@@ -4,8 +4,8 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => setIsOpen(!isOpen);
     return (
-        <header className="fixed top-0 left-0 w-full px-5 lg:px-20 py-5 lg:py-4 flex justify-left lg:justify-center items-center bg-black z-100 shadow-md">
-            <nav className="hidden md:flex space-x-16">
+        <header className="fixed top-0 left-0 w-full px-5 lg:px-20 py-5 lg:py-4 flex justify-left lg:justify-center items-center bg-black shadow-md z-20">
+            <nav className="hidden lg:flex space-x-16">
                 <a href="#" className="text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Home</a>
                 <a href="#" className="text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">About</a>
                 <a href="#" className="text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Skills</a>
@@ -13,7 +13,7 @@ const Header = () => {
                 <a href="#" className="text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Projects</a>
                 <a href="#" className="text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Contact</a>
             </nav>
-            <button onClick={toggleMenu} className="md:hidden">
+            <button onClick={toggleMenu} className="lg:hidden">
                 {isOpen ? (
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 text-white">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -24,7 +24,7 @@ const Header = () => {
                     </svg>
                 )}
             </button>
-            <nav id="mobile-menu" className={`bg-black border-b-2 border-white absolute top-full right-0 w-full p-5 md:hidden transition-all duration-200 ease-linear ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+            <nav id="mobile-menu" className={`bg-black border-b-2 border-white absolute top-full right-0 w-full p-5 lg:hidden transition-all duration-200 ease-linear ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                 <a href="#" className="block mb-2 text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Home</a>
                 <a href="#" className="block mb-2 text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">About</a>
                 <a href="#" className="block mb-2 text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Skills</a>
