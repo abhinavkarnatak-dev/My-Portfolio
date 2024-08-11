@@ -21,7 +21,7 @@ const Home = () => {
                         <a href="https://github.com/abhinavkarnatak-dev" className="text-Purple1 border-2 border-Purple1 p-2 rounded-full hover:bg-Purple1 hover:text-black transition ease-in-out"><i className="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/abhinav-karnatak-9a7667206/" className="text-Purple1 border-2 border-Purple1 p-2 rounded-full hover:bg-Purple1 hover:text-black transition ease-in-out"><i className="fab fa-linkedin"></i></a>
                         <a href="https://x.com/AbhinavKar941" className="text-Purple1 border-2 border-Purple1 p-2 rounded-full hover:bg-Purple1 hover:text-black transition ease-in-out"><i className="fab fa-twitter"></i></a>                    </div>
-                    <a href={CV} target='_blank' rel='noopener noreferrer' className="inline-block mt-10 md:mt-12 lg:mt-14 px-4 lg:px-8 py-2 lg:py-3 bg-Purple1 text-white font-bold text-sm lg:text-lg border-2 border-Purple1 rounded-full hover:bg-Purple2 hover:text-white transition ease-in-out mr-3 lg:mr-4 mb-10 lg:mb-0">Resume <OpenInNewIcon fontSize='small'/></a>
+                    <a href={CV} target='_blank' rel='noopener noreferrer' className="inline-block mt-10 md:mt-12 lg:mt-14 px-4 lg:px-8 py-2 lg:py-3 bg-Purple1 text-white font-bold text-sm lg:text-lg border-2 border-Purple1 rounded-full hover:bg-Purple2 hover:text-white transition ease-in-out mb-10 lg:mb-0">Resume <OpenInNewIcon fontSize='small'/></a>
 
                 </div>
             </div>
