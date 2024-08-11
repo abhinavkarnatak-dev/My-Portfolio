@@ -4,11 +4,10 @@ import CV from '../assets/akResume.pdf'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import TypingEffect from 'react-typing-effect';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';
 
 const Home = () => {
     return (
-        <section className="min-h-screen flex justify-center items-center bg-black text-white px-36 z-10">
+        <section id='home' className="min-h-screen flex justify-center items-center bg-black text-white px-36 z-10">
             <div className="flex flex-col md:flex-row items-center gap-14 lg:gap-20">
                 <div className="rounded-full border-2 md:border-[3px] lg:border-[3px] border-Purple1 overflow-hidden w-[200px] md:min-w-48 lg:min-w-64 mt-[90px] md:-mt-10 lg:mt-0 md:-ml-10">
                     <img src={myImage} alt="Abhinav" className="rounded-full shadow-lg cursor-pointer hover:scale-110 transition ease-in-out"/>
@@ -22,7 +21,6 @@ const Home = () => {
                         <a href="https://www.linkedin.com/in/abhinav-karnatak-9a7667206/" className="text-Purple1 border-2 border-Purple1 p-2 rounded-full hover:bg-Purple1 hover:text-black transition ease-in-out"><i className="fab fa-linkedin"></i></a>
                         <a href="https://x.com/AbhinavKar941" className="text-Purple1 border-2 border-Purple1 p-2 rounded-full hover:bg-Purple1 hover:text-black transition ease-in-out"><i className="fab fa-twitter"></i></a>                    </div>
                     <a href={CV} target='_blank' rel='noopener noreferrer' className="inline-block mt-10 md:mt-12 lg:mt-14 px-4 lg:px-8 py-2 lg:py-3 bg-Purple1 text-white font-bold text-sm lg:text-lg border-2 border-Purple1 rounded-full hover:bg-Purple2 hover:text-white transition ease-in-out mb-10 lg:mb-0">Resume <OpenInNewIcon fontSize='small'/></a>
-
                 </div>
             </div>
         </section>
