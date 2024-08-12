@@ -41,7 +41,7 @@ const Card = ({}) => {
     }
   `
 
-  const SkillsContainer = styled.div`
+  const ServicesContainer = styled.div`
     keyboard: focusable;1
     width: 100%;
     display: flex;
@@ -52,7 +52,7 @@ const Card = ({}) => {
     justify-content: center;
   `
   
-  const Skill = styled.div`
+  const Service = styled.div`
     width: 100%;
     max-width: 300px;
     border: 0.1px solid #854CE6;
@@ -71,7 +71,7 @@ const Card = ({}) => {
     }
   `
   
-  const SkillTitle = styled.h2`
+  const ServiceTitle = styled.h2`
     font-size: 25px;
     font-weight: 500;
     color: white;
@@ -79,42 +79,42 @@ const Card = ({}) => {
     text-align: center;
   `
   
-  const SkillList = styled.div`
+  const ServiceList = styled.div`
     display: flex;
     justify-content: center; 
   `
   
-  const SkillItem = styled.div`
+  const ServiceItem = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
   `
   
-  const SkillImage = styled.img`
+  const ServiceImage = styled.img`
     width: 90px;
     height: 90px;
   `
 
   return (
-    <Container id="skills">
+    <Container id="services">
       <Wrapper>
         <Title>About</Title>
         <Desc>Versatile developer skilled in the following areas, which I've been working on for the past 2 years
         </Desc>
-        <SkillsContainer>
+        <ServicesContainer>
           {services.map((service) => (
-            <Skill>
-              <SkillTitle>{service.title}</SkillTitle>
-              <SkillList>
+            <Service>
+              <ServiceTitle>{service.title}</ServiceTitle>
+              <ServiceList>
                 {service.services.map((item) => (
-                  <SkillItem>
-                    <SkillImage src={item.image}/>
-                  </SkillItem>
+                  <ServiceItem>
+                    <ServiceImage src={item.image}/>
+                  </ServiceItem>
                 ))}
-              </SkillList>
-            </Skill>
+              </ServiceList>
+            </Service>
           ))}
-        </SkillsContainer>
+        </ServicesContainer>
       </Wrapper>
     </Container>
   );

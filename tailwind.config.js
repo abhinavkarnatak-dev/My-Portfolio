@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        Purple1: '#8a2ce2',
+        Purple1: '#854CE6',
         Purple2: '#a156e7',
       },
       brightness: {
