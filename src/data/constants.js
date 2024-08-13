@@ -182,3 +182,18 @@ export const skills = [
       ],
     },
 ];
+
+export const experiences = [
+  {
+    title: "Data Engineer Intern",
+    company_name: "HERE Technologies",
+    icon: '/Experience/HERE.jpg',
+    iconBg: "#383A46",
+    date: "Jun 2024 - Jul 2024",
+    points: [
+      "Developed and maintained web scraping scripts using Scrapy and BeautifulSoup to efficiently extract store data from various online sources.",
+      "Cleaned and organized scraped data, ensuring accuracy and completeness for use in company databases and applications.",
+      "Collaborated with team members to troubleshoot and resolve issues related to web scraping processes and data extraction.",
+    ],
+  }
+];

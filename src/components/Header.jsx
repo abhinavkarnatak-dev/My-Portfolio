@@ -25,13 +25,20 @@ const Header = () => {
         }
     };
 
+    const scrollToExperience = () => {
+        const experienceSection = document.querySelector('#experience');
+        if (experienceSection) {
+            experienceSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <header className="fixed top-0 left-0 w-full px-5 lg:px-20 py-5 lg:py-4 flex justify-left lg:justify-center items-center bg-black shadow-md z-20 border-b-[0.1px] border-white">
             <nav className="hidden lg:flex space-x-16">
                 <a onClick={scrollToHome} className="cursor-pointer text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Home</a>
                 <a onClick={scrollToAbout} className="cursor-pointer text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">About</a>
-                <a onClick={scrollToSkills} className="text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Skills</a>
-                <a href="#" className="text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Experience</a>
+                <a onClick={scrollToSkills} className="cursor-pointer text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Skills</a>
+                <a onClick={scrollToExperience} className="cursor-pointer text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Experience</a>
                 <a href="#" className="text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Projects</a>
                 <a href="#" className="text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Contact</a>
             </nav>
@@ -50,7 +57,7 @@ const Header = () => {
                 <a onClick={scrollToHome} className="block mb-2 text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Home</a>
                 <a onClick={scrollToAbout} className="block mb-2 text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">About</a>
                 <a onClick={scrollToSkills} className="block mb-2 text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Skills</a>
-                <a href="#" className="block mb-2 text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Experience</a>
+                <a onClick={scrollToExperience} className="block mb-2 text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Experience</a>
                 <a href="#" className="block mb-2 text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Projects</a>
                 <a href="#" className="block text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Contact</a>
             </nav>

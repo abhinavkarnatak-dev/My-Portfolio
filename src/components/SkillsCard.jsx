@@ -33,8 +33,8 @@ const SkillsCard = () => {
     const Title = styled.div`
         font-size: 30px;
         text-align: center;
-        font-weight: 600;
-        margin-top: 70px;
+        font-weight: bold;
+        margin-top: 100px;
         color: white;
         @media (max-width: 768px) {
             margin-top: 80px;
@@ -123,7 +123,7 @@ const SkillsCard = () => {
         justify-content: center; 
         flex-wrap: wrap;
         gap: 25px;
-        margin-top: 75px;
+        margin-top: 90px;
     `
 
     const SkillItem = styled.div`
