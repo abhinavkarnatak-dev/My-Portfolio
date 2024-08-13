@@ -67,6 +67,7 @@ const SkillsCard = () => {
         padding: 8px 16px;
         cursor: pointer;
         font-size: 16px;
+        font-weight: bold;
     `
 
     const PaginationContainer = styled.div`
@@ -128,7 +129,7 @@ const SkillsCard = () => {
         font-size: 16px;
         font-weight: 400;
         color: white;
-        border: 1px solid #854CE6;
+        border: 1px solid white;
         box-shadow: 0 0 10px 2px rgba(133, 76, 230, 1);
         border-radius: 12px;
         padding: 12px 16px;
