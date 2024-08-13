@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { services } from '../data/constants'
 
-const Card = ({}) => {
+const AboutCard = ({}) => {
 
   const Container = styled.div`
   display: flex;
@@ -27,7 +27,7 @@ const Card = ({}) => {
   font-size: 30px;
   text-align: center;
   font-weight: 700;
-  margin-top: 30px;
+  margin-top: 50px;
   color: white;
   `
   
@@ -120,4 +120,4 @@ const Card = ({}) => {
   );
 };
 
-export default Card;
+export default AboutCard;
