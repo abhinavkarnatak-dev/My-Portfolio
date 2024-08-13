@@ -57,17 +57,19 @@ const SkillsCard = () => {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 15px;
     `
 
     const FilterButton = styled.button`
         color: white;
-        border: 2px solid #854CE6;
-        border-radius: 8px;
+        border: 1px solid #854CE6;
         padding: 8px 16px;
         cursor: pointer;
         font-size: 16px;
         font-weight: bold;
+        @media (max-width: 640px) {
+            font-size: 12px;
+            font-weight: 700;
+        }
     `
 
     const PaginationContainer = styled.div`
