@@ -123,7 +123,7 @@ const SkillsCard = () => {
         justify-content: center; 
         flex-wrap: wrap;
         gap: 25px;
-        margin-top: 100px;
+        margin-top: 75px;
     `
 
     const SkillItem = styled.div`
