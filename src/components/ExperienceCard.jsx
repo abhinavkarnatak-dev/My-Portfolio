@@ -14,8 +14,9 @@ const ExperienceCard = ({ experience }) => {
     date={experience.date}
     iconStyle={{background:experience.iconBg }}
     icon={<div className='flex justify-center items-center w-full h-full'>
-      <img src={experience.icon} alt={experience.company_name} className='w-[70%] h-[70%] object-contain' />
+      <img src={experience.icon} alt={experience.company_name} className='border:none rounded-xl w-[80%] h-[80%] object-contain' />
     </div>}
+    className='max-w-96 lg:max-w-full'
     >
       
       <div>
@@ -23,7 +24,7 @@ const ExperienceCard = ({ experience }) => {
         <p className='text-secondary-white text-[16px] font-semibold' style={{margin: 0}}>{experience.company_name}</p>
       </div>
 
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
+      <ul className='mt-5 list-disc ml-5  space-y-2'>
         {experience.points.map((point,index) => (
           <li key={index} className='text-white-100 text-[15px] pl-1 tracking-wider'>{point}</li>
         ))}
@@ -40,7 +41,7 @@ const Experience = () => {
       id="experience">
       <TitleText title={<> My Work Experience<br className='md:block hidden'/></>} textStyle="text-center"/>
       </motion.div>
-      <div className='mt-14 flex flex-col'>
+      <div className='mt-14 mb-14 flex flex-col'>
         <VerticalTimeline>
           {experiences.map((experience,index) => (
             <ExperienceCard key={index} experience={experience}/>

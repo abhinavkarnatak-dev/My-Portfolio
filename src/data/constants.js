@@ -195,5 +195,17 @@ export const experiences = [
       "Cleaned and organized scraped data, ensuring accuracy and completeness for use in company databases and applications.",
       "Collaborated with team members to troubleshoot and resolve issues related to web scraping processes and data extraction.",
     ],
+  },
+  {
+    title: "Student Placement Representative (SPR)",
+    company_name: "UPES",
+    icon: '/Experience/UPES.png',
+    iconBg: "#E3E4E9",
+    date: "Sep 2023 - Present",
+    points: [
+      "Coordinate with Career Services to keep students informed about internship and placement opportunities.",
+      "Provide timely updates on application procedures, deadlines, resources to support students in securing internships and job.",
+      "Address and resolve students' placement-related queries within the batch.",
+    ],
   }
 ];
