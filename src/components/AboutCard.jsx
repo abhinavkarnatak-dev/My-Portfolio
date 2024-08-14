@@ -64,6 +64,7 @@ const AboutCard = ({}) => {
     padding: 18px;
     transition: all 0.2s ease-in-out;
     &:hover {
+        border: 0.1px solid white;
         transform: translateY(-10px);
         box-shadow: 0 0 50px 3px rgba(133, 76, 230, 1);
         filter: brightness(1.1);

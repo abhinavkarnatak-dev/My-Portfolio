@@ -2,52 +2,69 @@ import React, { useState } from 'react';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState('home'); // Tracks the active section
+
     const toggleMenu = () => setIsOpen(!isOpen);
 
-    const scrollToAbout = () => {
-        const aboutSection = document.querySelector('#about');
-        if (aboutSection) {
-            aboutSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
-    const scrollToHome = () => {
-        const homeSection = document.querySelector('#home');
-        if (homeSection) {
-            homeSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
-    const scrollToSkills = () => {
-        const skillsSection = document.querySelector('#skills');
-        if (skillsSection) {
-            skillsSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
-    const scrollToExperience = () => {
-        const experienceSection = document.querySelector('#experience');
-        if (experienceSection) {
-            experienceSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
-    const scrollToProjects = () => {
-        const projectsSection = document.querySelector('#projects');
-        if (projectsSection) {
-            projectsSection.scrollIntoView({ behavior: 'smooth' });
+    const handleScroll = (section) => {
+        setActiveSection(section); // Set the active section
+        const sectionElement = document.querySelector(`#${section}`);
+        if (sectionElement) {
+            sectionElement.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
     return (
         <header className="fixed top-0 left-0 w-full px-5 lg:px-20 py-5 lg:py-4 flex justify-left lg:justify-center items-center bg-black shadow-md z-20 border-b-[0.1px] border-white">
             <nav className="hidden lg:flex space-x-16">
-                <a onClick={scrollToHome} className="cursor-pointer text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Home</a>
-                <a onClick={scrollToAbout} className="cursor-pointer text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">About</a>
-                <a onClick={scrollToSkills} className="cursor-pointer text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Skills</a>
-                <a onClick={scrollToExperience} className="cursor-pointer text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Experience</a>
-                <a onClick={scrollToProjects} className="cursor-pointer text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Projects</a>
-                <a href="#" className="text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Contact</a>
+                <a
+                    onClick={() => handleScroll('home')}
+                    className={`cursor-pointer text-lg font-medium border-b-3 border-transparent transition ease-in-out ${
+                        activeSection === 'home' ? 'text-Purple1' : 'text-white hover:text-Purple1 hover:border-Purple1'
+                    }`}
+                >
+                    Home
+                </a>
+                <a
+                    onClick={() => handleScroll('about')}
+                    className={`cursor-pointer text-lg font-medium border-b-3 border-transparent transition ease-in-out ${
+                        activeSection === 'about' ? 'text-Purple1' : 'text-white hover:text-Purple1 hover:border-Purple1'
+                    }`}
+                >
+                    About
+                </a>
+                <a
+                    onClick={() => handleScroll('skills')}
+                    className={`cursor-pointer text-lg font-medium border-b-3 border-transparent transition ease-in-out ${
+                        activeSection === 'skills' ? 'text-Purple1' : 'text-white hover:text-Purple1 hover:border-Purple1'
+                    }`}
+                >
+                    Skills
+                </a>
+                <a
+                    onClick={() => handleScroll('experience')}
+                    className={`cursor-pointer text-lg font-medium border-b-3 border-transparent transition ease-in-out ${
+                        activeSection === 'experience' ? 'text-Purple1' : 'text-white hover:text-Purple1 hover:border-Purple1'
+                    }`}
+                >
+                    Experience
+                </a>
+                <a
+                    onClick={() => handleScroll('projects')}
+                    className={`cursor-pointer text-lg font-medium border-b-3 border-transparent transition ease-in-out ${
+                        activeSection === 'projects' ? 'text-Purple1' : 'text-white hover:text-Purple1 hover:border-Purple1'
+                    }`}
+                >
+                    Projects
+                </a>
+                <a
+                    onClick={() => handleScroll('contact')}
+                    className={`cursor-pointer text-lg font-medium border-b-3 border-transparent transition ease-in-out ${
+                        activeSection === 'contact' ? 'text-Purple1' : 'text-white hover:text-Purple1 hover:border-Purple1'
+                    }`}
+                >
+                    Contact
+                </a>
             </nav>
             <button onClick={toggleMenu} className="lg:hidden">
                 {isOpen ? (
@@ -61,12 +78,54 @@ const Header = () => {
                 )}
             </button>
             <nav id="mobile-menu" className={`bg-black border-b-2 border-white absolute top-full right-0 w-full p-5 lg:hidden transition-all duration-200 ease-linear ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-                <a onClick={scrollToHome} className="block mb-2 text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Home</a>
-                <a onClick={scrollToAbout} className="block mb-2 text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">About</a>
-                <a onClick={scrollToSkills} className="block mb-2 text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Skills</a>
-                <a onClick={scrollToExperience} className="block mb-2 text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Experience</a>
-                <a onClick={scrollToProjects} className="block mb-2 text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Projects</a>
-                <a href="#" className="block text-lg text-white font-medium hover:text-Purple1 border-b-3 border-transparent hover:border-Purple1 transition ease-in-out">Contact</a>
+                <a
+                    onClick={() => handleScroll('home')}
+                    className={`block mb-2 text-lg font-medium border-b-3 border-transparent transition ease-in-out ${
+                        activeSection === 'home' ? 'text-Purple1' : 'text-white hover:text-Purple1 hover:border-Purple1'
+                    }`}
+                >
+                    Home
+                </a>
+                <a
+                    onClick={() => handleScroll('about')}
+                    className={`block mb-2 text-lg font-medium border-b-3 border-transparent transition ease-in-out ${
+                        activeSection === 'about' ? 'text-Purple1' : 'text-white hover:text-Purple1 hover:border-Purple1'
+                    }`}
+                >
+                    About
+                </a>
+                <a
+                    onClick={() => handleScroll('skills')}
+                    className={`block mb-2 text-lg font-medium border-b-3 border-transparent transition ease-in-out ${
+                        activeSection === 'skills' ? 'text-Purple1' : 'text-white hover:text-Purple1 hover:border-Purple1'
+                    }`}
+                >
+                    Skills
+                </a>
+                <a
+                    onClick={() => handleScroll('experience')}
+                    className={`block mb-2 text-lg font-medium border-b-3 border-transparent transition ease-in-out ${
+                        activeSection === 'experience' ? 'text-Purple1' : 'text-white hover:text-Purple1 hover:border-Purple1'
+                    }`}
+                >
+                    Experience
+                </a>
+                <a
+                    onClick={() => handleScroll('projects')}
+                    className={`block mb-2 text-lg font-medium border-b-3 border-transparent transition ease-in-out ${
+                        activeSection === 'projects' ? 'text-Purple1' : 'text-white hover:text-Purple1 hover:border-Purple1'
+                    }`}
+                >
+                    Projects
+                </a>
+                <a
+                    onClick={() => handleScroll('contact')}
+                    className={`block text-lg font-medium border-b-3 border-transparent transition ease-in-out ${
+                        activeSection === 'contact' ? 'text-Purple1' : 'text-white hover:text-Purple1 hover:border-Purple1'
+                    }`}
+                >
+                    Contact
+                </a>
             </nav>
         </header>
     );

@@ -28,7 +28,7 @@ const styles = {
       "text-[#dfd9ff] font-bold lg:text-[25px] sm:text-[20px] xs:text-[16px] text-[16px] leading-[30px] lg:leading-[33px]",
   
     sectionHeadText:
-      "text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
+      "text-white  font-black md:text-[45px] sm:text-[50px] xs:text-[40px] text-[30px]",
     sectionSubText:
       "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
   };
