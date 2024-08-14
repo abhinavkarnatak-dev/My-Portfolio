@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { skills } from '../data/constants'
+import { motion } from 'framer-motion';
+import { textVariant} from '../utils/motion';
+import { TitleText } from './CustomTexts';
 
 const SkillsCard = () => {
     const [selectedFilter, setSelectedFilter] = useState('Languages');
@@ -180,7 +183,10 @@ const SkillsCard = () => {
     return (
         <Container id="skills">
             <Wrapper>
-                <Title>Skills</Title>
+            <motion.div
+            variants={textVariant()}>
+            <TitleText title={<> Skills </>} textStyle="text-center"/>
+            </motion.div>
                 <Desc>Here are some of my skills on which I have been working on for the past 2 years.</Desc>
                 <FilterContainer>
                     {paginateButtons(skills, currentPage).map(skill => (

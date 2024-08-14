@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { services } from '../data/constants'
+import { motion } from 'framer-motion';
+import { textVariant} from '../utils/motion';
+import { TitleText } from './CustomTexts';
 
 const AboutCard = ({}) => {
 
@@ -98,8 +101,11 @@ const AboutCard = ({}) => {
   return (
     <Container id="services">
       <Wrapper>
-        <Title>About</Title>
-        <Desc>Versatile developer skilled in the following areas, which I've been working on for the past 2 years
+        <motion.div
+        variants={textVariant()}>
+        <TitleText title={<> About </>} textStyle="text-center"/>
+        </motion.div>
+        <Desc>I am a versatile developer skilled in the following areas
         </Desc>
         <ServicesContainer>
           {services.map((service) => (

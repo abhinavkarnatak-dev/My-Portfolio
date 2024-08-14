@@ -4,6 +4,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
+import Projects from './components/Projects';
 import './App.css';
 
 const App = () => {
@@ -12,8 +13,9 @@ const App = () => {
             <Header />
             <Home />
             <About />
-            <Skills/>
-            <Experience/>
+            <Skills />
+            <Experience />
+            <Projects />
         </div>
     );
 };

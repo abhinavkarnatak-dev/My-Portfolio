@@ -209,3 +209,56 @@ export const experiences = [
     ],
   }
 ];
+
+export const projects = [
+  {
+    name: "SudoWiz: Interactive Sudoku Solver",
+    description:
+      "A web-based Sudoku solver built with React and Tailwind CSS. SudoWiz provides an interactive Sudoku grid where users can input numbers, solve the Sudoku puzzle, and reset the grid.",
+    tags: [
+      {
+        name: "React Js",
+      },
+      {
+        name: "Tailwind CSS",
+      },
+      {
+        name: "HTML",
+      },
+      {
+        name: "CSS",
+      },
+      {
+        name: "JavaScript",
+      },
+    ],
+    image: '/Projects/sudowiz.png',
+    source_code_link: "https://github.com/sakshamshahu/AIEDS",
+    url_link: "https://sudowiz.vercel.app/",
+    // prod : true
+  },
+  {
+    name: "NN Based Detection, Classification of Streaming Images",
+    description:
+      "This project features a real-time surveillance system using YOLO v8 in Python. It detects and tracks objects in video feeds for security and monitoring applications.",
+    tags: [
+      {
+        name: "Python",
+      },
+      {
+        name: "OpenCV",
+      },
+      {
+        name: "YOLO v8",
+      },
+      {
+        name: "Tkinter",
+      },
+    ],
+    image: '/Projects/nnbased.png',
+    source_code_link: "https://github.com/mukul-anand-bhatt/NN-based-Detection-and-Classification-of-Streaming-Images",
+    // url_link: "",
+    // prod : true
+  },
+
+];
