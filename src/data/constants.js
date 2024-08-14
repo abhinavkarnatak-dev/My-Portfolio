@@ -233,7 +233,7 @@ export const projects = [
       },
     ],
     image: '/Projects/sudowiz.png',
-    source_code_link: "https://github.com/sakshamshahu/AIEDS",
+    source_code_link: "https://github.com/abhinavkarnatak-dev/SudoWiz",
     url_link: "https://sudowiz.vercel.app/",
     // prod : true
   },
