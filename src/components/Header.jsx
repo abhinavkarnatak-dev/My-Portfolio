@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [activeSection, setActiveSection] = useState('home'); // Tracks the active section
+    const [activeSection, setActiveSection] = useState('home');
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
     const handleScroll = (section) => {
-        setActiveSection(section); // Set the active section
+        setActiveSection(section);
         const sectionElement = document.querySelector(`#${section}`);
         if (sectionElement) {
             sectionElement.scrollIntoView({ behavior: 'smooth' });
