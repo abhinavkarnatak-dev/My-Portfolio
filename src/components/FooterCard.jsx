@@ -1,8 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion';
-import { socials } from '../data/constants';
-import styles from '../styles';
-import { footerVariants } from '../utils/motion';
 
 const FooterCard = () => {
     return (

@@ -150,6 +150,11 @@ export const skills = [
       title: "Tools",
       skills: [
         {
+          name: "Figma",
+          image:
+            "/Skills/Tools/FIGMA.svg",
+        },
+        {
           name: "Git",
           image:
             "/Skills/Tools/GIT.svg",
@@ -261,22 +266,4 @@ export const projects = [
     // prod : true
   },
 
-];
-
-export const socials = [
-  {
-    name: 'github',
-    url: '/Footer/github.png',
-    link: "https://github.com/abhinavkarnatak-dev",
-  },
-  {
-    name: 'linkedin',
-    url: '/Footer/linkedin.svg',
-    link: 'https://www.linkedin.com/in/abhinav-karnatak-9a7667206/',
-  },
-  {
-    name: 'twitter',
-    url: '/Footer/twitter.png',
-    link: "https://x.com/AbhinavKar941",
-  },
 ];
