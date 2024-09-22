@@ -1,6 +1,6 @@
 export const services = [
     {
-      title: "Full Stack Development",
+      title: "Full Stack Developer",
       services: [
         {
           name: "Full Stack",
@@ -9,7 +9,7 @@ export const services = [
       ],
     },
     {
-      title: "React Development",
+      title: "React Developer",
       services: [
         {
           name: "React Js",
@@ -18,7 +18,7 @@ export const services = [
       ],
     },
     {
-      title: "ML Development",
+      title: "ML Developer",
       services: [
         {
           name: "ML",
@@ -27,7 +27,7 @@ export const services = [
       ],
     },
     {
-      title: "UI Designing",
+      title: "UI Designer",
       services: [
         {
           name: "UI",
