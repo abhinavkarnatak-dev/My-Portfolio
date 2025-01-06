@@ -226,6 +226,35 @@ export const projects = [
     // prod : true
   },
   {
+    name: "AviaGeek - Aircraft Encyclopedia",
+    description:
+      "A platform for avgeeks, built with Next.js, MongoDB, NextAuth, Node.js, Tailwind CSS, and Cloudinary. AviaGeek offer details about various aircraft models, allowing users to compare models, and a \"favorites\" page to keep track of their favorite aircraft.",
+    tags: [
+      {
+        name: "Next.js",
+      },
+      {
+        name: "Tailwind CSS",
+      },
+      {
+        name: "NextAuth",
+      },
+      {
+        name: "MongoDB",
+      },
+      {
+        name: "Node.js",
+      },
+      {
+        name: "Cloudinary",
+      },
+    ],
+    image: "/Projects/aviageek.png",
+    source_code_link: "https://github.com/abhinavkarnatak-dev/AviaGeek",
+    url_link: "https://aviageek.vercel.app/",
+    // prod: true,
+  },
+  {
     name: "SudoWiz: Quick Sudoku Solver",
     description:
       "SudoWiz is a Sudoku solver built with React and Tailwind CSS. It allows users to input numbers into a grid, solve puzzles automatically, and reset the game with ease. The app offers a simple, interactive interface for an enjoyable puzzle-solving experience.",
@@ -247,32 +276,6 @@ export const projects = [
     source_code_link: "https://github.com/abhinavkarnatak-dev/SudoWiz",
     url_link: "https://sudowiz.vercel.app/",
     // prod : true
-  },
-  {
-    name: "AviaGeek - Aircraft Encyclopedia",
-    description:
-      "Aviation enthusiasts' platform under development, built with Next.js, MongoDB, NextAuth, Node.js, and Tailwind CSS. Aviageek will offer details about various aircraft models, allow users to compare models, and feature a favorites page for saving preferred aircraft.",
-    tags: [
-      {
-        name: "Next.js",
-      },
-      {
-        name: "Tailwind CSS",
-      },
-      {
-        name: "NextAuth",
-      },
-      {
-        name: "MongoDB",
-      },
-      {
-        name: "Node.js",
-      },
-    ],
-    image: "/Projects/aviageek.png",
-    source_code_link: "https://github.com/abhinavkarnatak-dev/AviaGeek",
-    url_link: "https://aviageek.vercel.app/",
-    prod: true,
   },
   {
     name: "NN-Based Image Detection & Classification",
