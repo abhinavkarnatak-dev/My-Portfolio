@@ -187,7 +187,7 @@ const SkillsCard = () => {
             variants={textVariant()}>
             <TitleText title={<> Skills </>} textStyle="text-center"/>
             </motion.div>
-                <Desc>Here are some of my skills on which I have been working on for the past 2 years.</Desc>
+                <Desc>Here are some of the key skills I've developed and honed over the past few years.</Desc>
                 <FilterContainer>
                     {paginateButtons(skills, currentPage).map(skill => (
                         <FilterButton

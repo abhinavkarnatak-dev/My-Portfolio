@@ -63,8 +63,7 @@ const ContactCard = () => {
   return (
     <section className='mt-10 relative z-10'>
       <div className='2xl:mt-12 py-7 flex justify-center xl:flex-col-reverse 2xl:flex-row flex-col-reverse items-center gap-2 overflow-hidden w-screen' id="contact">
-        <motion.div
-          variants={slideIn('left', 'tween', 0.2, 1)}
+        <div
           className='bg-zinc-800 p-8 hover:shadow-[0_0_25px_3px_rgba(133,76,230,1)] hover:border-white hover:border-2 rounded-2xl w-[90%] lg:w-[60%] 2xl:w-[40%] md:h-full h-[40rem] flex flex-col justify-between'>
           <div>
             <h3 className='text-white font-black text-center md:text-[45px] sm:text-[50px] xs:text-[40px] text-[30px]'>Contact.</h3>
@@ -87,7 +86,7 @@ const ContactCard = () => {
               {loading ? "Sending..." : "Send"}
             </button>
           </form>
-        </motion.div>
+        </div>
       </div>
 
       <Modal

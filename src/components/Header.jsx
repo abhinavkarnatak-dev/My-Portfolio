@@ -15,7 +15,7 @@ const Header = () => {
     };
 
     return (
-        <header className="fixed top-0 left-0 w-full px-5 lg:px-20 py-5 lg:py-4 flex justify-left lg:justify-center items-center bg-black shadow-md z-20 border-b-[0.1px] border-white">
+        <header className="fixed top-0 left-0 w-full px-5 lg:px-20 py-5 lg:py-4 flex justify-left lg:justify-center items-center bg-black shadow-md z-20 border-white">
             <nav className="hidden lg:flex space-x-16">
                 <a
                     onClick={() => handleScroll('home')}

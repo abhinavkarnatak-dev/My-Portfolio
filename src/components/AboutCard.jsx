@@ -57,7 +57,7 @@ const AboutCard = ({}) => {
   
   const Service = styled.div`
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     border: 0.1px solid #854CE6;
     box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
     border-radius: 16px;
@@ -70,7 +70,7 @@ const AboutCard = ({}) => {
         filter: brightness(1.1);
     }
     @media (max-width: 640px) {
-      max-width: 275px;
+      max-width: 310px;
       margin-bottom: 10px
     }
   `

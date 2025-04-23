@@ -1,6 +1,6 @@
 export const services = [
   {
-    title: "Full Stack Developer",
+    title: "Full-Stack Development",
     services: [
       {
         name: "Full Stack",
@@ -9,7 +9,7 @@ export const services = [
     ],
   },
   {
-    title: "React Developer",
+    title: "Web Applications",
     services: [
       {
         name: "React Js",
@@ -18,7 +18,7 @@ export const services = [
     ],
   },
   {
-    title: "ML Developer",
+    title: "Machine Learning",
     services: [
       {
         name: "ML",
@@ -27,7 +27,7 @@ export const services = [
     ],
   },
   {
-    title: "UI Designer",
+    title: "UI/UX Design",
     services: [
       {
         name: "UI",
@@ -73,6 +73,10 @@ export const skills = [
       {
         name: "React Js",
         image: "/Skills/WebTech/REACT.svg",
+      },
+      {
+        name: "React Native",
+        image: "/Skills/WebTech/REACTNATIVE.png",
       },
       {
         name: "Tailwind CSS",
@@ -176,15 +180,27 @@ export const skills = [
 
 export const experiences = [
   {
+    title: "Frontend Developer Intern",
+    company_name: "Quality AI",
+    icon: "/Experience/QAI.png",
+    iconBg: "#FFFFFF",
+    date: "Nov 2024 - Dec 2024",
+    points: [
+      "Built DermaGlow AI, a responsive web app that delivers AI-powered personalized skincare routines using Next.js, Tailwind CSS, and Gemini API, improving user accessibility to expert guidance.",
+      "Designed and implemented dynamic UI/UX interactions with Framer Motion, enhancing user engagement through smooth transitions and animations.",
+      "Integrated form-based AI workflows that analyze user input and images to generate tailored skincare insights using Gemini’s multimodal capabilities.",
+    ],
+  },
+  {
     title: "Data Engineer Intern",
     company_name: "HERE Technologies",
     icon: "/Experience/HERE.jpg",
     iconBg: "#383A46",
     date: "Jun 2024 - Jul 2024",
     points: [
-      "Developed and maintained web scraping scripts using Scrapy and BeautifulSoup to efficiently extract store data from various online sources.",
-      "Cleaned and organized scraped data, ensuring accuracy and completeness for use in company databases and applications.",
-      "Collaborated with team members to troubleshoot and resolve issues related to web scraping processes and data extraction.",
+      "Built a custom web crawler using Scrapy to collect store locations and metadata from various retail websites, handling diverse HTML structures with adaptable parsing logic.",
+      "Automated data collection through scheduled Scrapy spiders, reducing manual effort and saving approximately 30% of operational time.",
+      "Documented workflows and codebase to ensure maintainability and ease of future updates.",
     ],
   },
   {
@@ -226,6 +242,52 @@ export const projects = [
     // prod : true
   },
   {
+    name: "DermaGlow AI – Personalized Skincare Powered by AI",
+    description:
+      "A responsive skincare recommendation platform built using Next.js, Tailwind CSS, and Framer Motion. It uses a smart questionnaire to collect user data and generates personalized skincare routines and product suggestions using AI, with smooth transitions and a clean UI for enhanced user experience.",
+    tags: [
+      {
+        name: "Next.js",
+      },
+      {
+        name: "Tailwind CSS",
+      },
+      {
+        name: "Framer Motion",
+      },
+      {
+        name: "Gemini API",
+      },
+    ],
+    image: "/Projects/dermaglowai.jpg",
+    source_code_link: "https://github.com/abhinavkarnatak-dev/DermaGlow-AI",
+    url_link: "https://dermaglowai.vercel.app/",
+    // prod : true
+  },
+  {
+    name: "AdaptSense: Empowering Visually & Hearing Impaired with AI",
+    description:
+      "Built with React Native (Expo) and Tailwind CSS, AdaptSense is a mobile app that enhances accessibility by converting text, braille, audio, and images into four output formats: audio, text, braille, and sign language GIFs. It integrates Gemini APIs for 13 unique input-output combinations, providing a seamless experience for auditory and visually impaired users.",
+    tags: [
+      {
+        name: "React Native (Expo)",
+      },
+      {
+        name: "Tailwind CSS",
+      },
+      {
+        name: "Fast API",
+      },
+      {
+        name: "Gemini API",
+      },
+    ],
+    image: "/Projects/adaptsense.jpg",
+    source_code_link: "https://github.com/abhinavkarnatak-dev/AdaptSense",
+    // url_link: "",
+    // prod: true,
+  },
+  {
     name: "AviaGeek - Aircraft Encyclopedia",
     description:
       "A platform for avgeeks, built with Next.js, MongoDB, NextAuth, Node.js, Tailwind CSS, and Cloudinary. AviaGeek offer details about various aircraft models, allowing users to compare models, and a \"favorites\" page to keep track of their favorite aircraft.",
@@ -244,9 +306,6 @@ export const projects = [
       },
       {
         name: "Node.js",
-      },
-      {
-        name: "Cloudinary",
       },
     ],
     image: "/Projects/aviageek.png",
