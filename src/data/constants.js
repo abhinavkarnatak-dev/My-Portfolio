@@ -18,20 +18,20 @@ export const services = [
     ],
   },
   {
-    title: "Machine Learning",
-    services: [
-      {
-        name: "ML",
-        image: "ml.svg",
-      },
-    ],
-  },
-  {
     title: "UI/UX Design",
     services: [
       {
         name: "UI",
         image: "ui.svg",
+      },
+    ],
+  },
+  {
+    title: "Machine Learning",
+    services: [
+      {
+        name: "ML",
+        image: "ml.svg",
       },
     ],
   },
@@ -44,6 +44,14 @@ export const skills = [
       {
         name: "C++",
         image: "/Skills/Languages/CPP.svg",
+      },
+      {
+        name: "JavaScript",
+        image: "/Skills/Languages/JS.svg",
+      },
+      {
+        name: "TypeScript",
+        image: "/Skills/Languages/TS.svg",
       },
       {
         name: "Python",
@@ -62,14 +70,6 @@ export const skills = [
         name: "CSS",
         image: "/Skills/WebTech/CSS.svg",
       },
-      {
-        name: "JavaScript",
-        image: "/Skills/WebTech/JS.svg",
-      },
-      // {
-      //   name: "TypeScript",
-      //   image: "/Skills/WebTech/TS.svg",
-      // },
       {
         name: "React Js",
         image: "/Skills/WebTech/REACT.svg",
@@ -107,34 +107,22 @@ export const skills = [
         name: "MongoDB",
         image: "/Skills/Databases/MONGODB.svg",
       },
-      // {
-      //   name: "MySQL",
-      //   image: "/Skills/Databases/MYSQL.svg",
-      // },
-      // {
-      //   name: "Postgresql",
-      //   image: "/Skills/Databases/POSTGRES.svg",
-      // },
       {
-        name: "Firebase",
-        image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+        name: "Postgresql",
+        image: "/Skills/Databases/POSTGRES.svg",
+      },
+      {
+        name: "Prisma",
+        image: "/Skills/Databases/PRISMA.svg",
       },
     ],
   },
   {
-    title: "Data Science/ML",
+    title: "Computer Vision",
     skills: [
       {
         name: "OpenCV",
         image: "/Skills/DSML/OPENCV.svg",
-      },
-      {
-        name: "Artificial Intelligence",
-        image: "/Skills/DSML/AI.svg",
-      },
-      {
-        name: "Machine Learning",
-        image: "/Skills/DSML/ML.svg",
       },
     ],
   },
@@ -219,7 +207,30 @@ export const experiences = [
 
 export const projects = [
   {
-    name: "PixScribe - AI Image Generator",
+    name: "Revuea – Empowering Honest Feedback with Anonymity",
+    description:
+      "A full stack web app that helps teams and communities gather honest, anonymous feedback without fear of judgment. Built with React, Node.js, Tailwind CSS, PostgreSQL, and Prisma — it offers secure form creation, real-time analytics, CSV exports, and AI-powered summaries.",
+    tags: [
+      {
+        name: "React.js",
+      },
+      {
+        name: "Node.js",
+      },
+      {
+        name: "PostgreSQL (Prisma)",
+      },
+      {
+        name: "Framer Motion",
+      },
+    ],
+    image: "/Projects/revuea.png",
+    source_code_link: "https://github.com/abhinavkarnatak-dev/Revuea",
+    url_link: "https://revuea.vercel.app/",
+    // prod : true
+  },
+  {
+    name: "PixScribe - SaaS Text-to-Image Generator Web App",
     description:
       "A SaaS-based text-to-image generator built with MERN stack, Tailwind CSS, and Framer Motion. PixScribe allows users to create custom images using a credit-based system, with options to purchase additional credits via Razorpay, and features a responsive design with dynamic credit tracking.",
     tags: [
@@ -290,7 +301,7 @@ export const projects = [
   {
     name: "AviaGeek - Aircraft Encyclopedia",
     description:
-      "A platform for avgeeks, built with Next.js, MongoDB, NextAuth, Node.js, Tailwind CSS, and Cloudinary. AviaGeek offer details about various aircraft models, allowing users to compare models, and a \"favorites\" page to keep track of their favorite aircraft.",
+      'A platform for avgeeks, built with Next.js, MongoDB, NextAuth, Node.js, Tailwind CSS, and Cloudinary. AviaGeek offer details about various aircraft models, allowing users to compare models, and a "favorites" page to keep track of their favorite aircraft.',
     tags: [
       {
         name: "Next.js",

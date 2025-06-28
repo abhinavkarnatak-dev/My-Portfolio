@@ -46,7 +46,7 @@ const Home = () => {
             </span>
             <TypingEffect
               className="text-Purple1"
-              text={["Full Stack Developer", "Problem Solver", "AI/ML Engineer"]}
+              text={["Full Stack Developer", "Problem Solver", "Tech Enthusiast"]}
               speed={100}
               eraseSpeed={100}
               typingDelay={100}
@@ -60,7 +60,7 @@ const Home = () => {
             transition={{ delay: 0.5 }}
             className="text-base md:text-lg lg:text-lg mt-8"
           >
-            Final-year B.Tech student specializing in AI/ML and full-stack development, with a strong focus on frontend engineering. I love building responsive, user-centric web and mobile applications using modern frameworks like React, Next.js, and Tailwind CSS. Whether it's developing scalable SaaS platforms or enhancing accessibility through tech, I’m driven by the challenge of turning creative ideas into impactful digital experiences.
+            I specialize in building responsive, scalable, and user-centric web and mobile applications using technologies like React, Next.js, Tailwind CSS, Node.js, PostgreSQL, and MongoDB. From SaaS platforms to accessibility-focused tools, I enjoy crafting full-stack solutions that solve real problems and create meaningful digital experiences.
           </motion.p>
           <div className="flex justify-center md:justify-start mt-8 space-x-6">
             <motion.a
