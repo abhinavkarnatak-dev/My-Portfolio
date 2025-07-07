@@ -168,27 +168,15 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "Frontend Developer Intern",
-    company_name: "Quality AI",
-    icon: "/Experience/QAI.png",
-    iconBg: "#FFFFFF",
-    date: "Nov 2024 - Dec 2024",
-    points: [
-      "Built DermaGlow AI, a responsive web app that delivers AI-powered personalized skincare routines using Next.js, Tailwind CSS, and Gemini API, improving user accessibility to expert guidance.",
-      "Designed and implemented dynamic UI/UX interactions with Framer Motion, enhancing user engagement through smooth transitions and animations.",
-      "Integrated form-based AI workflows that analyze user input and images to generate tailored skincare insights using Gemini’s multimodal capabilities.",
-    ],
-  },
-  {
     title: "Data Engineer Intern",
     company_name: "HERE Technologies",
     icon: "/Experience/HERE.jpg",
     iconBg: "#383A46",
     date: "Jun 2024 - Jul 2024",
     points: [
-      "Built a custom web crawler using Scrapy to collect store locations and metadata from various retail websites, handling diverse HTML structures with adaptable parsing logic.",
-      "Automated data collection through scheduled Scrapy spiders, reducing manual effort and saving approximately 30% of operational time.",
-      "Documented workflows and codebase to ensure maintainability and ease of future updates.",
+      "Built a custom web crawler using Scrapy to collect store locations from various retail websites, handling diverse HTML structures.",
+      "Automated data collection through scheduled Scrapy spiders, reducing manual effort and saving around 30% of operational time.",
+      "Documented the workflow and codebase to make it easier to maintain and update in the future.",
     ],
   },
   {
@@ -196,11 +184,11 @@ export const experiences = [
     company_name: "UPES",
     icon: "/Experience/UPES.png",
     iconBg: "#E3E4E9",
-    date: "Sep 2023 - Present",
+    date: "Sep 2023 - May 2025",
     points: [
-      "Coordinate with Career Services to keep students informed about internship and placement opportunities.",
-      "Provide timely updates on application procedures, deadlines, resources to support students in securing internships and job.",
-      "Address and resolve students' placement-related queries within the batch.",
+      "Coordinated with Career Services to keep students informed about internship and placement opportunities.",
+      "Provided timely updates on application procedures, deadlines, resources to support students in securing internships and job.",
+      "Addressed and resolved students' placement-related queries within the batch.",
     ],
   },
 ];
