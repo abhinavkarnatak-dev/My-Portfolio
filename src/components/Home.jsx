@@ -1,6 +1,6 @@
 import React from "react";
 import myImage from "../assets/myPhoto.jpg";
-import CV from "../assets/akResume.pdf";
+import CV from "../assets/Abhinav Karnatak Resume.pdf";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import TypingEffect from "react-typing-effect";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
